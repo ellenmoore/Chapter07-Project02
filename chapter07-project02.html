@@ -17,7 +17,7 @@
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
     
-   
+   <script src="video.js"></script>
     
   </head>
 
@@ -122,8 +122,20 @@
 <div class="jumbotron">
   <div class="container">
 
-video goes here
-
+		<video id="video" poster="" controls width="480" height="360">
+			<source src="sample.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+			<source src="sample.webm" type='video/webm; codecs="vp8, vorbis"'>
+			<source src="sample.ogv" type='video/ogg; codecs="theora, vorbis"'>
+			<img src="preview.png" width="480" height="360" title="video not supported">
+			Your browser does not support video.
+		</video>
+		<!-- Video Controls -->
+		<div id="video-controls">
+			<button type="button" id="begin">&#10073;&#10094;&#10094;</button>
+			<button type="button" id="rewind">&#10094;&#10094;</button>
+			<button type="button" id="play-pause">&#10095;</button>
+			<button type="button" id="end">&#10095;&#10095;&#10072;</button>
+		</div>
   
   </div>
 </div>         
